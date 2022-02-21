@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keyword" content="HTML, Comentários, Listas, Layout, Elemetos Semânticos">
+    <meta name="author" content="Talita Alves">
+    <title>BORA PRO ROLÊ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="topo">
+        <!--Topo da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a>
+                </li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu"> Ir para o menu[2] </a></li>
+                <li><a href="#rodape" accesskey="3"> Ir para o rodapé[3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html"
+                        title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste"> CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste"> SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar"> A +</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir"> A -</a></li>
+
+            </ul>
+        </div>
+        <!--colocar o logo do topo!-->
+        <nav>
+            <img id="logo" src="imagem/LOGO1.BANNERPRINCIPAL.png" alt="imagem com o logo Bora pro rolê">
+        </nav>
+        <label for="bt_menu"><img src="imagem/menu_.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <div class="barra_menu">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="encontreseurole.html">ENCONTRE SEU ROLÊ</a></li>
+                <li><a href="cadastrar.html">CADASTRAR</a></li>
+                <li><a href="publicar.html">QUER PUBLICAR UM ROLÊ</a>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+
+
+        </div>
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </header>
+
+    <main id="conteudo">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>QUEM SOMOS</li><br><br>
+            <h1>QUEM SOMOS </h1>
+
+        </ul>
+
+         <section id="quemsomos">
+            <p>O Bora Pro Rolê é uma plataforma que tem como um dos seus meta contribuir para o desenvolvimento social
+            </p>
+            <p>e gerar bem-estar para comunidade e pensando nisso se dedica a realizar os 17 Objetivos de
+                Desenvolvimento</p>
+            <p>Sustentável da ONU que são um apelo global para ação para acabar com a pobreza, proteger o meio ambiente
+            </p>
+            <p>e o clima e garantir que as pessoas, em todos os lugares, possam desfrutar de paz e de prosperidade.
+                Estes</p>
+            <p> são os objetivos para os quais as Nações Unidas estão contribuindo a fim de que possamos atingir a </p>
+            <p>O bora Pro Role se enquadra em dois desses objetivos sendo esses os:</p><br>
+            <h2 class="objetivo">Objetivo 3.</h2><br>
+            <p>3.5 Reforçar a prevenção e o tratamento do abuso de substâncias, incluindo o abuso de drogas
+                entorpecentes e uso nocivo do álcool</p>
+            <p>Durante todo o mês de Junho serão organizados eventos, shows e palestras, conscientizando sobre o risco
+                do uso</p>
+            <p>abusivo dessas substâncias. Serão eventos online e presenciais gratuitos e pagos que terão toda a
+                arrecadação</p>
+            <p>destinada para ONGs que trabalham com dependentes químicos e alcoolistas.</p><br>
+            <h2 class="objetivo">Objetivo 9.</h2><br>
+            <p>Construir infraestruturas resilientes, promover a industrialização inclusiva e sustentável e fomentar a
+                inovação</p>
+            <p>9.3 Aumentar o acesso das pequenas indústrias e outras empresas, particularmente em países em</p>
+            <p>desenvolvimento, aos serviços financeiros, incluindo crédito acessível e sua integração em cadeias de
+                valor e</p>
+            <p>mercados</p><br>
+            <p>O Bora Pro Role é parceiro dos artistas que estão no fora do mainstream e querem divulgar seu trabalho de
+                forma</p>
+            <p>gratuita, incentivando novos artísticas a não desistirem dos seus sonhos e divulgarem seu trabalho.</p>
+        </sectioni>
+            <!-- <img id="imagemquemsomos"src="imagem/evento.jpg" alt="imagem com conteúdo explicativo sobre site em HTML."> -->
+        
+    </main>
+    <!--contéudo principal da página-->
+    <!-- roda pé da página -->
+    
+    <footer id="copyright">
+        <h2>Mapa do Site<img src="./imagem/logooredessociais.png" id="testimg"></h4>
+           <div id="test">
+             <ul >
+                 <h4>Eventos</h4>
+                 <ul class="testNay">Hoje</ul>
+                 <ul class="testNay">Semana</ul>
+                 <ul class="testNay" >Mês</ul>
+             </ul>
+             <ul>
+                 <h4>Cidades</h4>
+                 <ul class="testNay">São Paulo</ul>
+                 <ul class="testNay">Belo Horizonte</ul>
+                 <ul class="testNay">Rio de Janeiro</ul>
+                 <ul class="testNay">Porto Alegre</ul>
+                 <ul class="testNay">Brasília</ul>
+                 <ul class="testNay">Salvador</ul>
+                 <ul class="testNay">Curitiba</ul>
+                 <ul class="testNay">Recife</ul>
+             </ul>
+           <ul>
+               <h4>Categorias</h4>
+                  <ul class="testNay">Shows</ul>
+                  <ul class="testNay">Teatros</ul>
+                  <ul class="testNay">Gratis</ul>
+                  <ul class="testNay">Infantil</ul>
+           </ul>
+           <ul>
+               <h4>Seu Rolê</h4>
+               <ul class="testNay">Cadastrar</ul>
+               <ul class="testNay">Login</ul>
+           </ul>
+           <ul>
+               <h4>Ajuda</h4>
+               <ul class="testNay">Central de Ajuda</ul>
+               <ul class="testNay">Compradores e Participantes</ul>
+               <ul class="testNay">Produtores de Eventos</ul>
+           </ul>
+   
+           <h4>Home</h4>
+   
+           <h4>Fale Conosco</h4>
+         </div>
+       <h4 style="text-align: center;"> Bora pro Rolê &copy;Copyright 2021</h4>
+       </footer>  
+</body>
+
+</html>

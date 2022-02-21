@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keyword" content="HTML, Comentários, Listas, Layout, Elemetos Semânticos">
+    <meta name="author" content="Talita Alves">
+    <title>BORA PRO ROLÊ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="topo">
+        <!--Topo da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a>
+                </li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu"> Ir para o menu[2] </a></li>
+                <li><a href="#rodape" accesskey="3"> Ir para o rodapé[3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">
+                        ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste"> CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste"> SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar"> A +</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir"> A -</a></li>
+
+            </ul>
+        </div>
+        <!--colocar o logo do topo!-->
+        <nav>
+            <img id="logo" src="imagem/LOGO1.BANNERPRINCIPAL.png" alt="imagem com o logo Bora pro rolê">
+        </nav>
+        <label for="bt_menu"><img src="imagem/menu_.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <div class="barra_menu">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="encontreseurole.html">ENCONTRE SEU ROLÊ</a></li>
+                <li><a href="cadastrar.html">CADASTRAR</a></li>
+                <li><a href="publicar.html">QUER PUBLICAR UM ROLÊ</a>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+
+        </div></br>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+
+    </header>
+
+    <main id="conteudo">
+        <!-- <label id="pesquisa">Digite aqui o nome do evento...<input type="text" id="User" name="Name" /></label> -->
+        <ul id="pesquisa">
+            <ul class="breadcrumb">
+                <li><a href="index.html">Início</a></li>
+                <li>RESULTADO PESQUISA</li></br></br></br>
+                <p>A BUSCA RETORNOU ESSE RESULTADO</p></br>
+               
+            </ul><br>
+        </ul>
+
+        <section>
+
+            <div id="div5">
+                <div class="box" id="div5"><img src="imagem/rapa.jpg" alt="imagem com artista Rapa  em HTML."></div> 
+            </div>
+
+
+        </section>
+    </main>
+    <!--contéudo principal da página-->
+    <footer id="copyright">
+        <h2>Mapa do Site<img src="./imagem/logooredessociais.png" id="testimg"></h2>
+           <div id="test">
+             <ul >
+                 <h4>Eventos</h4>
+                 <ul class="testNay">Hoje</ul>
+                 <ul class="testNay">Semana</ul>
+                 <ul class="testNay" >Mês</ul>
+             </ul>
+             <ul>
+                 <h4>Cidades</h4>
+                 <ul class="testNay">São Paulo</ul>
+                 <ul class="testNay">Belo Horizonte</ul>
+                 <ul class="testNay">Rio de Janeiro</ul>
+                 <ul class="testNay">Porto Alegre</ul>
+                 <ul class="testNay">Brasília</ul>
+                 <ul class="testNay">Salvador</ul>
+                 <ul class="testNay">Curitiba</ul>
+                 <ul class="testNay">Recife</ul>
+             </ul>
+           <ul>
+               <h4>Categorias</h4>
+                  <ul class="testNay">Shows</ul>
+                  <ul class="testNay">Teatros</ul>
+                  <ul class="testNay">Gratis</ul>
+                  <ul class="testNay">Infantil</ul>
+           </ul>
+           <ul>
+               <h4>Seu Rolê</h4>
+               <ul class="testNay">Cadastrar</ul>
+               <ul class="testNay">Login</ul>
+           </ul>
+           <ul>
+               <h4>Ajuda</h4>
+               <ul class="testNay">Central de Ajuda</ul>
+               <ul class="testNay">Compradores e Participantes</ul>
+               <ul class="testNay">Produtores de Eventos</ul>
+           </ul>
+   
+           <h4>RESULTADO PESQUISA</h4>
+   
+           <h4>Fale Conosco</h4>
+         </div>
+       <h4 style="text-align: center;"> Bora pro Rolê &copy;Copyright 2021</h4>
+       </footer> 
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="description" content="Aula comentários, metadados, listas e layout">
+    <meta name="keyword" content="HTML, Comentários, Listas, Layout, Elemetos Semânticos"> -->
+    <meta name="author" content="Talita Alves">
+    <title>BORA PRO ROLÊ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header id="topo">
+        <!--Topo da página-->
+        <div id="acessibilidade">
+            <ul id="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo[1]</a>
+                </li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu"> Ir para o menu[2] </a></li>
+                <li><a href="#rodape" accesskey="3"> Ir para o rodapé[3]</a></li>
+                <li id="pgacess"><a href="acessibilidade.html" title="Ir para a página de Acessibilidade">
+                        ACESSIBILIDADE</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="contraste"> CONTRASTE PRETO</a></li>
+                <li class="contraste"><a href="javascript:void(0);" id="sem_contraste"> SEM CONTRASTE</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="aumentar"> A +</a></li>
+                <li class="fonte"><a href="javascript:void(0);" id="diminuir"> A -</a></li>
+
+            </ul>
+        </div>
+        <!--colocar o logo do topo!-->
+        <nav>
+            <img id="logo" src="imagem/LOGO1.BANNERPRINCIPAL.png" alt="imagem com o logo Bora pro rolê">
+        </nav>
+        <label for="bt_menu"><img src="imagem/menu_.png" alt="menu"></label>
+        <input type="checkbox" id="bt_menu">
+        <div class="barra_menu">
+            <ul id="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="encontreseurole.html">ENCONTRE SEU ROLÊ</a></li>
+
+                <li><a href="cadastrar.html">CADASTRAR</a></li>
+                <li><a href="publicar.html">QUER PUBLICAR UM ROLÊ</a>
+                <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+            </ul>
+        </div>
+
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+    </header>
+    <!--contéudo principal da página-->
+    <main id="conteudo">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>CADASTRAR</li>
+           
+        </ul>
+        <h1>CADASTRAR</h1>
+        <h2 class="venda">JÁ A VENDA!</h2></br>
+        <div id="teste11">
+            <div>
+                <div class="box" id="div4"><img src="./imagem/annita-red.jpg" alt="imagem com artista Annita  em HTML.">
+                </div>
+                <!-- formulario  -->
+
+                <div id="main-container">
+                    <h1>Cadastre-se</h1>
+                    <form id="register-form" action="">
+                        <div class="full-box">
+                            <label for="text" class="required">Nome completo</label>
+                            <input type="nome"  name="nome" id="nome" required placeholder="Digite seu nome completo"
+                                data-required data-min-length="3" data-max-length="16">
+                        </div>
+                        <div class="half-box spacing">
+                            <!-- <label for="name">CPF</label>
+                            <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" data-required
+                                data-min-length="3" data-max-length="16"> -->
+                                <label for="cpf" class="required">CPF</label><br>
+                    <input type="text" name="cpf" id="cpf" required placeholder="000.000.000.00"><br>
+                        </div>
+                        <div class="half-box">
+                            <labe for="data"  class="required">Data de Nascimento</labe>
+                            <input id="text" type="date" name="date" placeholder="Digite sua data de nascimento"
+                                required ata-required data-min-length="3" data-max-length="16">
+                        </div>
+                        <div class="half-box spacing">
+                            <label for="endereço" class="required">Endereço</label>
+                            <input type="text" name="endereço" id="endereço" placeholder="Digite o endereço"
+                                data-required data-min-length="3" data-max-length="16">
+                        </div>
+
+
+                        <div class="half-box spacing">
+                            <label for="lastname "class="required">numero</label>
+                            <input type="number" name="number" id="number" placeholder="numero residencia"
+                                data-password-validate data-required>
+                        </div>
+
+                        <div class="half-box spacing">
+                            <label for="name" class="required">CIDADE</label>
+                            <input type="text" name="cidade" id="cidade" placeholder="Digite a cidade" required
+                                data-min-length="3" data-max-length="16">
+                        </div>
+
+                        <div class="half-box spacing">
+                            <label for="name" class="required">Estado</label>
+                            <input type="text" name="estado" id="estado" placeholder="Digite o estado" data-required
+                                data-min-length="3" data-max-length="16">
+                        </div>
+                        <div class="full-box">
+                            <label for="text" >Ponto de referencia </label>
+                            <input type="nome" name="nome" id="nome" placeholder="Digite Ponto de referência"
+                                data-equal="text">
+                        </div>
+
+
+                        <div class="half-box spacing">
+                            <label for="name" class="required">CEP</label>
+                            <input type="text" name="CEP" id="CEP" required placeholder="000.000-000" data-required
+                                data-min-length="3" data-max-length="16">
+                        </div>
+
+                        <div class="half-box spacing">
+                                <label for="email"class="required" class="required">E-mail</label><br>
+                                <input type="email" name="email" id="email" required placeholder="nome@dominio.com.br"><br>
+                        </div>
+
+                        <div class="half-box spacing">
+                            <label for="lastname"class="required">Senha</label>
+                            <input type="password" name="password" id="password" placeholder="Digite sua senha"
+                                data-password-validate data-required>
+                        </div>
+
+                        <div class="half-box">
+                            <label for="passconfirmation" class="required">Confirmação de senha</label>
+                            <input type="password" name="passconfirmation" id="passwordconfirmation"
+                                placeholder="Digite novamente sua senha" data-equal="password">
+                        </div>
+                        <div>
+                            <input type="checkbox" name="agreement" id="agreement">
+                            <label for="agreement" id="agreement-label">Eu li e aceito os <a href="#">termos de
+                                    uso</a></label>
+                        </div>
+                        <div class="full-box">
+                            <input id="btn-submit" type="submit" value="Registrar">
+                        </div>
+                    </form>
+                    
+                    <!-- fim formulario -->
+
+
+    </main>
+
+    <!-- roda pé da página -->
+    
+    <footer id="copyright">
+        <h2>Mapa do Site<img src="./imagem/logooredessociais.png" id="testimg"></h4>
+           <div id="test">
+             <ul >
+                 <h4>Eventos</h4>
+                 <ul class="testNay">Hoje</ul>
+                 <ul class="testNay">Semana</ul>
+                 <ul class="testNay" >Mês</ul>
+             </ul>
+             <ul>
+                 <h4>Cidades</h4>
+                 <ul class="testNay">São Paulo</ul>
+                 <ul class="testNay">Belo Horizonte</ul>
+                 <ul class="testNay">Rio de Janeiro</ul>
+                 <ul class="testNay">Porto Alegre</ul>
+                 <ul class="testNay">Brasília</ul>
+                 <ul class="testNay">Salvador</ul>
+                 <ul class="testNay">Curitiba</ul>
+                 <ul class="testNay">Recife</ul>
+             </ul>
+           <ul>
+               <h4>Categorias</h4>
+                  <ul class="testNay">Shows</ul>
+                  <ul class="testNay">Teatros</ul>
+                  <ul class="testNay">Gratis</ul>
+                  <ul class="testNay">Infantil</ul>
+           </ul>
+           <ul>
+               <h4>Seu Rolê</h4>
+               <ul class="testNay">Cadastrar</ul>
+               <ul class="testNay">Login</ul>
+           </ul>
+           <ul>
+               <h4>Ajuda</h4>
+               <ul class="testNay">Central de Ajuda</ul>
+               <ul class="testNay">Compradores e Participantes</ul>
+               <ul class="testNay">Produtores de Eventos</ul>
+           </ul>
+   
+           <h4>Home</h4>
+   
+           <h4>Fale Conosco</h4>
+         </div>
+       <h4 style="text-align: center;"> Bora pro Rolê &copy;Copyright 2021</h4>
+       </footer> 
+</body>
+
+</html>
